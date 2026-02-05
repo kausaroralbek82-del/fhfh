@@ -385,9 +385,11 @@
       const bTn = document.querySelector(".chip");
       const vId = document.querySelector(".videos");
 
-      bTn.addEventListener("click", () => {
-        videos.classList.toggle("active");
-      });
+      if (bTn && vId) {
+        bTn.addEventListener("click", () => {
+          vId.classList.toggle("active");
+        });
+      }
     </script>
   </body>
 </html>
